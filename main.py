@@ -25,10 +25,6 @@ class CongestionInput(BaseModel):
     Rainy: int
     Sunny: int
     Windy: int
-    _8_00_8_30: int
-    _8_30_9_00: int
-    _9_00_9_30: int
-    _9_30_10_00: int
     _10_00_10_30: int
     _10_30_11_00: int
     _11_00_11_30: int
@@ -49,6 +45,10 @@ class CongestionInput(BaseModel):
     _18_30_19_00: int
     _19_00_19_30: int
     _19_30_20_00: int
+    _8_00_8_30: int
+    _8_30_9_00: int
+    _9_00_9_30: int
+    _9_30_10_00: int
 @app.get("/")
 def home():
     return {"message": "Congestion Prediction API running!"}
